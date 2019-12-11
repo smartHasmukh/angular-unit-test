@@ -1,0 +1,13 @@
+<div>
+    <div *ngFor="let user of userList">
+        <label><a (click)="clickEventHandler()">{{user.name}}</a></label>
+    </div>
+    <div *ngIf="enableButtons">
+        <button id="btn1" type="button" [disabled]="flag">Button 1</button>
+        <button id="btn2" type="button" [disabled]="flag">Button 2</button>
+        <button id="btn3" type="button" [disabled]="flag">Button 3</button>
+        <button id="btn4" type="button" [disabled]="flag">Button 4</button>
+        <button id="btn5" type="button" [disabled]="flag">Button 5</button>
+        <button id="btn6" type="button" [disabled]="flag">Button 6</button>
+    </div>
+</div>
